@@ -1083,7 +1083,7 @@ function getIMPushContent (comment) {
   const SITE_URL = config.SITE_URL
   const POST_URL = appendHashToUrl(comment.href || SITE_URL + comment.url, comment.id)
   const subject = config.MAIL_SUBJECT_ADMIN || `${SITE_NAME}有新评论了`
-  const content = `评论人：${NICK}(${MAIL})<br>评论人IP：${IP}<br>评论内容：${COMMENT}<br>您可以点击 ${POST_URL} 查看回复的完整內容`
+  const content = `评论人：${NICK}(${MAIL})<br>评论内容：${COMMENT}<br>`
   return {
     subject,
     content
